@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="n1" value="">
+    <input type="button" id="n2" onclick="add();" value="add">
+    <input type="button" id="n3" onclick="Display_array();" value="Display">
+    <div id="n4"></div>
+    <script>
+        let x = 0;
+        let array= Array();
+        function add(){
+            array[x]=document.getElementById("n1").value;
+            x++;
+            document.getElementById("n1").value="";
+            alert("da them phan tu " + array[x] +" vao mang")
+        }
+        function display (){
+            e = "<hr/>";
+            for(i=0;i<array.length;i++)
+            e = "element is" + i + " = " + array[i] + "<br/>" ;
+            
+        }
+        document.getElementById("n4").innerHTML=e;
+    </script>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<!-- saved from url=(0042)file:///C:/Users/PC-ASUS/Desktop/hung.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>&lt;
+
+
+
+    
+    <title>JS Bin</title>
+    <style>
+        body {padding-top:50px}
+     </style>
+
+
+
+    <input type="text" id="txtValue">
+    <input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();">
+    <input type="button" id="btnDisplay" value="Display" onclick="display_array();">
+    <div id="result"><hr>Element 0 = e<br>Element 1 = 3<br>Element 2 = nho<br></div>
+
+
+<script>
+    let x = 0;
+    let array = Array();
+    function add_element_to_array() {
+    array[x] = document.getElementById("txtValue").value;
+    alert("Element: " + array[x] + " Added at index " + x);
+    x++;
+    document.getElementById("txtValue ").value = "";}
+    function display_array() {
+    let e = "<hr/>";
+    for (let i = 0; i < array.length; i++) {
+        e += "Element " + i + " = " + array[i] + "<br/>";
+        document.getElementById("n4").innerHTML = e;
+    }
+  
+}
+</script>
+</body></html>

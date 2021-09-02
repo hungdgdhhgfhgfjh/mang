@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="nhonha" value="">
+    <input type="button" value="add" onclick="nhoha();" name="" id="">
+    <input type="button" value="Display" onclick="Display_Array();" name="" id="1">
+    <div id="yeuem"></div>
+    <script>
+        let x =0;
+        let array =Array();
+        function nhoha(){
+             array[x] =document.getElementById("nhonha").value;
+             alert("da them phan tu " + array[x] + " vao mang" );
+             x++;
+            
+             document.getElementById("nhonha").value="";
+        }
+        function Display_Array(){
+            let e = "<br>";
+            for(i=0;i<array.length;i++){
+                e = " element " + i + " = " + array[i] +"<br>";
+                document.getElementById("yeuem").innerHTML = e +"<br>";
+            }
+        }
+    </script>
+</body>
+</html>
